@@ -4,14 +4,10 @@
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
-  --color-pink: #fe918d;
-  --color-dark-pink: #ff6863;
   --color-dark-grey: #4d4d4d;
   --color-grey: #616161;
   --color-light-grey: #7c7979;
   --color-blue: #73aace;
-  --color-yellow: #fff7d1;
-  --color-orange: #feb546;
   --color-black: #000000;
   --hover-color: #6495ed;
 
@@ -112,10 +108,17 @@ p {
   height: 66px;
   align-items: center;
   z-index: 1;
+  transition: all var(--animation-duration) linear;
+}
+
+#navbar.backgroundOn {
+  background-color: var(--color-black);
 }
 
 .navbar__menu {
   display: flex;
+  transition: all var(--animation-duration) linear;
+  
 }
 
 .navbar__menu__item {
@@ -125,6 +128,10 @@ p {
   font-weight: var(--weight-bold);
   transition: all var(--animation-duration) ease;
   font-size: large;
+}
+
+.navbar__menu__item.active {
+  color: var(--hover-color);
 }
 
 .navbar__menu__item:hover {
@@ -145,6 +152,15 @@ p {
   font-size: x-large;
   font-weight: var(--weight-bold);
   margin-left: 5px;
+}
+
+.navbar__toggle-btn {
+  position: absolute;
+  top: 20px;
+  right: 16px;
+  font-size: 24px;
+  color: var(--color-white);
+  display: none;
 }
 
 /* Section common */
@@ -345,7 +361,7 @@ p {
 #contact {
   background-color: var(--color-black);
   margin-top: 50px;
-  padding: 60px 80px;
+  padding: 40px 80px;
 }
 
 .contact__title {
@@ -371,3 +387,37 @@ p {
   font-size: 48px;
 }
 
+/* 반응형 웹 만들기 */
+/* For below 768px screen width */
+@media screen and (max-width: 768px) {
+  .navbar__toggle-btn {
+    display: block;
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    padding-top: 16px;
+  }
+
+  .navbar__menu {
+    flex-direction: column;
+    text-align: end;
+    width: 100%;
+    display: none;
+  }
+
+  .navbar__menu.open {
+    display: block;
+    margin-top: 0;
+  }
+
+  .navbar__menu__item {
+    margin: 10px;
+  }
+
+  .logo__img {
+    margin-left: 14px;
+  }
+}
