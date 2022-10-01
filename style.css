@@ -247,7 +247,7 @@ p {
 }
 
 .d2 {
-  margin: 0 26px;
+  margin: 0 27px;
 }
 
 .education__name {
@@ -387,9 +387,38 @@ p {
   font-size: 48px;
 }
 
+.arrow-up {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  font-size: 40px;
+  width: 60px;
+  height: 60px;
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all var(--animation-duration) linear;
+}
+
+.arrow-up.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 /* 반응형 웹 만들기 */
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
+  :root {
+    /* 미디어 쿼리에 해당할 때는 이 곳에 지정된 변수값이 적용되고 아닐때는 밖에 있는 글로벌 변수가 적용된다. */
+              /* Font size */
+      --font-large: 30px;
+      --font-medium: 18px;
+      --font-regular: 16px;
+      --font-small: 14px;
+      --font-micro: 12px;
+  }
   .navbar__toggle-btn {
     display: block;
   }
@@ -419,5 +448,54 @@ p {
 
   .logo__img {
     margin-left: 14px;
+  }
+
+  .profile__img {
+    width: 200px;
+    height: 200px;
+
+  }
+
+  .home__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section {
+    padding: 16px;
+    padding-top: 40px;
+  }
+
+  .skills__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill {
+    width: 80%;
+  }
+
+  .arrow-up {
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .project__info {
+    flex-direction: column;
+  }
+  
+  .project__img {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  
+  .project__description {
+    text-align: left;
+    width: 100%;
+    margin: 0;
   }
 }

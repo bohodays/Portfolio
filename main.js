@@ -130,3 +130,18 @@ window.addEventListener('wheel', () => {
   }
   selectNavItem(navItems[selectedNavIndex]);
 });
+
+
+// 스크롤을 내리면 맨 위로 갈 수 있는 화살표 버튼 활성화시키기
+const arrowUp = document.querySelector('.arrow-up');
+document.addEventListener('scroll', () => {
+  if (window.scrollY > homeHeight /2) {
+    arrowUp.classList.add('visible')
+  } else {
+    arrowUp.classList.remove('visible');
+  }
+});
+
+arrowUp.addEventListener('click', () => {
+  scrollIntoView('#home');
+})
