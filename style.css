@@ -272,7 +272,7 @@ p {
 .skill {
   margin: 15px;
   width: 40%;
-  box-shadow: 10px 10px 30px 0px rgb(212 212 212);
+  box-shadow: 10px 10px 10px 10px rgb(230, 226, 226);
   transition: all var(--animation-duration) ease;
 }
 
@@ -355,6 +355,10 @@ p {
 
 .project__link {
   display: flex;
+}
+
+.project1__link {
+  pointer-events: none;
 }
 
 /* Contact */
