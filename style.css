@@ -337,9 +337,13 @@ p {
   font-weight: var(--weight-bold);
 }
 
-.project__description p {
+.project__description .regular-margin-bottom {
   /* font-weight: var(--weight-semi-bold); */
   margin-bottom: 24px;
+}
+
+.small-margin-bottom {
+  margin-bottom: 12px;
 }
 
 .project__description a {
@@ -360,6 +364,9 @@ p {
 .project1__link {
   pointer-events: none;
 }
+
+
+
 
 /* Contact */
 #contact {
