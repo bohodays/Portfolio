@@ -260,7 +260,7 @@ p {
 
 /* Skills */
 .skill__section {
-  max-width: 1000px;
+  max-width: 1300px;
   
 }
 .skills__container {
@@ -271,13 +271,13 @@ p {
 
 .skill {
   margin: 15px;
-  width: 40%;
+  width: 500px;
   box-shadow: 10px 10px 10px 10px rgb(230, 226, 226);
   transition: all var(--animation-duration) ease;
 }
 
 .skill:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .skill__box {
@@ -291,6 +291,9 @@ p {
   height: 100px;
 }
 
+.border__control {
+  border-radius: 8px;
+}
 .skillbox__name {
   padding: 10px;
   font-size: var(--font-medium);
@@ -300,6 +303,10 @@ p {
 .skill__name {
   margin-top: 10px;
   font-weight: var(--weight-bold);
+}
+
+.unvisible {
+  opacity: 0;
 }
 
 /* Projects */
@@ -363,6 +370,10 @@ p {
 
 .project1__link {
   pointer-events: none;
+}
+
+.github__link:hover {
+  color:#6495ed;
 }
 
 
