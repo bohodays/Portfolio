@@ -36,7 +36,7 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin: 0;
   /* 글씨에 커서를 가까이해도 원형 유지 */
   cursor: default;
@@ -118,7 +118,6 @@ p {
 .navbar__menu {
   display: flex;
   transition: all var(--animation-duration) linear;
-  
 }
 
 .navbar__menu__item {
@@ -177,10 +176,9 @@ p {
   margin: auto;
 }
 
-
 /* Home */
 #home {
-  background: url('imgs/background_img.jpg') center/cover no-repeat;
+  background: url("imgs/background_img.jpg") center/cover no-repeat;
   padding: 100px;
   padding-bottom: 70px;
 }
@@ -231,7 +229,7 @@ p {
 /* About */
 .education {
   display: flex;
-  align-items:  center;
+  align-items: center;
 }
 
 .about__container {
@@ -261,7 +259,6 @@ p {
 /* Skills */
 .skill__section {
   max-width: 1300px;
-  
 }
 .skills__container {
   display: flex;
@@ -317,6 +314,7 @@ p {
 .project {
   padding: 20px;
   box-shadow: 10px 10px 30px 0px rgb(158 158 158);
+  margin-bottom: 60px;
 }
 
 .project h2 {
@@ -373,11 +371,8 @@ p {
 }
 
 .github__link:hover {
-  color:#6495ed;
+  color: #6495ed;
 }
-
-
-
 
 /* Contact */
 #contact {
@@ -434,12 +429,12 @@ p {
 @media screen and (max-width: 768px) {
   :root {
     /* 미디어 쿼리에 해당할 때는 이 곳에 지정된 변수값이 적용되고 아닐때는 밖에 있는 글로벌 변수가 적용된다. */
-              /* Font size */
-      --font-large: 30px;
-      --font-medium: 18px;
-      --font-regular: 16px;
-      --font-small: 14px;
-      --font-micro: 12px;
+    /* Font size */
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
   }
   .navbar__toggle-btn {
     display: block;
@@ -475,7 +470,6 @@ p {
   .profile__img {
     width: 200px;
     height: 200px;
-
   }
 
   .home__container {
@@ -509,12 +503,12 @@ p {
   .project__info {
     flex-direction: column;
   }
-  
+
   .project__img {
     margin-bottom: 30px;
     width: 100%;
   }
-  
+
   .project__description {
     text-align: left;
     width: 100%;

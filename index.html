@@ -1,203 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="imgs/favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/21a0726bae.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <title>JUNGWON's Portfolio</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="imgs/favicon.png">
-  <script src="https://kit.fontawesome.com/21a0726bae.js" crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <script src="main.js" defer></script>
-  <title>JUNGWON's Portfolio</title>
-</head>
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div class="nav__logo">
+        <img class="logo__img" src="imgs/favicon.png" alt="로고 이미지" />
+        <span class="logo__description">Jungwon Park</span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item active" data-link="#home">Home</li>
+        <li class="navbar__menu__item" data-link="#about">About</li>
+        <li class="navbar__menu__item" data-link="#skills">Skills</li>
+        <li class="navbar__menu__item" data-link="#projects">Projects</li>
+        <li class="navbar__menu__item" data-link="#contact">Contact</li>
+      </ul>
 
-<body>
-  <!-- Navbar -->
-  <nav id="navbar">
-    <div class="nav__logo">
-      <img class="logo__img" src="imgs/favicon.png" alt="로고 이미지">
-      <span class="logo__description">Jungwon Park</span>
-    </div>
-    <ul class="navbar__menu">
-      <li class="navbar__menu__item active" data-link="#home">Home</li>
-      <li class="navbar__menu__item" data-link="#about">About</li>
-      <li class="navbar__menu__item" data-link="#skills">Skills</li>
-      <li class="navbar__menu__item" data-link="#projects">Projects</li>
-      <li class="navbar__menu__item" data-link="#contact">Contact</li>
-    </ul>
+      <!-- Toglle button -->
+      <button class="navbar__toggle-btn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
 
-    <!-- Toglle button -->
-    <button class="navbar__toggle-btn">
-      <i class="fa-solid fa-bars"></i>
+    <!-- Home -->
+    <section id="home" class="section">
+      <div class="home__container">
+        <img
+          src="imgs/profile_img.png"
+          alt="프로필 이미지"
+          class="profile__img"
+        />
+        <h2 class="home__name">박중원</h2>
+        <h3 class="home__job">Front-end web developer</h3>
+        <h3 class="home__description">
+          무궁무진한 WEB 세계를 여행 중입니다! 🚀
+        </h3>
+        <button class="home__contact" data-link="#contact">CONTACT ME</button>
+      </div>
+    </section>
+
+    <!-- About me -->
+    <section id="about" class="section section__container">
+      <div class="about__container">
+        <h1>About me</h1>
+        <p>
+          어제보다 오늘, 오늘보다 내일 더 성장하는 개발자입니다!<br />개발자라는
+          새로운 길을 걸으며 실패를 두려워하지 않으려고 노력 중입니다.
+        </p>
+      </div>
+      <div class="about__educations">
+        <div class="education">
+          <img
+            id="education__img"
+            src="imgs/education/education_icon_222.jpg"
+            alt="yonsei"
+            class="education__logo2"
+          />
+          <div class="education__description d1">
+            <p class="education__name">연세대학교 대기과학 전공</p>
+            <p class="education__period">2016.03 ~ 2022.08</p>
+          </div>
+        </div>
+        <div class="education">
+          <img
+            id="education__img"
+            src="imgs/education/education_icon_114.png"
+            alt="ssafy"
+            class="education__logo1"
+          />
+          <div class="education__description d2">
+            <p class="education__name">삼성 청년 SW 아카데미</p>
+            <p class="education__period">2022.07 ~</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section skill__section">
+      <h1>Skills</h1>
+      <div class="skills__container">
+        <div class="skill">
+          <h3 class="skillbox__name">Web Basic</h3>
+          <div class="skill__box">
+            <div class="box__component">
+              <img
+                src="imgs/skill_imgs/html.png"
+                alt="HTML"
+                class="skill__img"
+              />
+              <div class="skill__name">HTML</div>
+            </div>
+            <div class="box__component">
+              <img src="imgs/skill_imgs/css.png" alt="CSS" class="skill__img" />
+              <div class="skill__name">CSS</div>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3 class="skillbox__name">Language</h3>
+          <div class="skill__box">
+            <div class="box__component">
+              <img
+                src="imgs/skill_imgs/python.png"
+                alt="Python"
+                class="skill__img"
+              />
+              <div class="skill__name">Python</div>
+            </div>
+            <div class="box__component">
+              <img
+                src="imgs/skill_imgs/javascript.png"
+                alt="JavaScript"
+                class="skill__img border__control"
+              />
+              <div class="skill__name">JavaScript</div>
+            </div>
+            <div class="box__component">
+              <img
+                src="imgs/skill_imgs/typescript.png"
+                alt="TypeScript"
+                class="skill__img"
+              />
+              <div class="skill__name">TypeScript</div>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3 class="skillbox__name">Framework</h3>
+          <div class="skill__box">
+            <div class="box__component">
+              <img src="imgs/skill_imgs/vue.png" alt="Vue" class="skill__img" />
+              <div class="skill__name">Vue</div>
+            </div>
+            <div class="box__component">
+              <img
+                src="imgs/skill_imgs/django.svg"
+                alt="Django"
+                class="skill__img"
+              />
+              <div class="skill__name">Django</div>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3 class="skillbox__name">Library</h3>
+          <div class="skill__box">
+            <div class="box__component">
+              <img
+                src="imgs/skill_imgs/react.png"
+                alt="React"
+                class="skill__img"
+              />
+              <div class="skill__name">React</div>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3 class="skillbox__name">Version Control</h3>
+          <div class="skill__box">
+            <div class="skill__component">
+              <img src="imgs/skill_imgs/git.png" alt="Git" class="skill__img" />
+              <div class="skill__name">Git</div>
+            </div>
+            <div class="skill__component">
+              <img
+                src="imgs/skill_imgs/github.png"
+                alt="Github"
+                class="skill__img"
+              />
+              <div class="skill__name">Github</div>
+            </div>
+          </div>
+        </div>
+        <div class="skill unvisible">
+          <h3 class="skillbox__name"></h3>
+          <div class="skill__box">
+            <div class="box__component">
+              <div class="skill__name"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section section__container">
+      <h1>Projects</h1>
+      <p class="projects_description">
+        (프로젝트에 대한 상세 설명은 해당 프로젝트의 Github 페이지 README를
+        참고바랍니다.)
+      </p>
+
+      <div class="project">
+        <h2 class="project__title">두런두런 (Do Learn Do Learn)</h2>
+        <div class="project__info">
+          <img
+            src="imgs/두런두런.gif"
+            alt="프로젝트 이미지"
+            class="project__img"
+          />
+          <div class="project__description">
+            <h3>기간</h3>
+            <p class="regular-margin-bottom">
+              2023.01.02 ~ 2023.02.17 (6인 프로젝트)
+            </p>
+            <h3>사용 기술스택</h3>
+            <p class="regular-margin-bottom">
+              React, JavaScript, Spring Boot, Java, Nginx, Docker 등
+            </p>
+            <h3>개요</h3>
+            <p class="small-margin-bottom">
+              webRTC를 활용한 실시간 화상 채팅 기능을 갖춘 교육 플랫폼
+            </p>
+            <p class="regular-margin-bottom"></p>
+            <p class="small-margin-bottom">
+              <a class="project1__link" href="#"><b>Link</b></a> <b>/</b>
+              <a
+                class="github__link"
+                href="https://github.com/bohodays/forest-of-ghibli"
+                ><b>Github</b></a
+              >
+            </p>
+            <p class="regular-margin-bottom">
+              * 배포가 중단되어 Link 비활성화 되었습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="project">
+        <h2 class="project__title">지브리의 숲</h2>
+        <div class="project__info">
+          <img
+            src="imgs/인트로.gif"
+            alt="프로젝트 이미지"
+            class="project__img"
+          />
+          <div class="project__description">
+            <h3>기간</h3>
+            <p class="regular-margin-bottom">
+              2022.11.08 ~ 2022.11.25 (2인 프로젝트)
+            </p>
+            <h3>사용 기술스택</h3>
+            <p class="regular-margin-bottom">Django, HTML, CSS, JavaScript</p>
+            <h3>개요</h3>
+            <p class="small-margin-bottom">지브리 영화 커뮤니티 웹사이트</p>
+            <p class="regular-margin-bottom">
+              * SSAFY 관통 프로젝트 우수상 수상
+            </p>
+            <p class="small-margin-bottom">
+              <a class="project1__link" href="#"><b>Link</b></a> <b>/</b>
+              <a
+                class="github__link"
+                href="https://github.com/bohodays/forest-of-ghibli"
+                ><b>Github</b></a
+              >
+            </p>
+            <p class="regular-margin-bottom">
+              * 배포가 중단되어 Link 비활성화 되었습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h1 class="contact__title">Contact</h1>
+      <h2 class="contact__email">pjw2369@naver.com</h2>
+      <div class="contact__links">
+        <a href="https://github.com/bohodays" target="_blank">
+          <i class="fab fa-github links__img"></i>
+        </a>
+        <a href="https://pjw2369.tistory.com/" target="_blank">
+          <img
+            src="imgs/tistory_logo.png"
+            alt="티스토리 아이콘"
+            class="links__img detail"
+          />
+        </a>
+      </div>
+    </section>
+
+    <!-- Arrow up -->
+    <button class="arrow-up">
+      <i class="fas fa-arrow-up"></i>
     </button>
-  </nav>
-
-  <!-- Home -->
-  <section id="home" class="section">
-    <div class="home__container">
-      <img src="imgs/profile_img.png" alt="프로필 이미지" class="profile__img">
-      <h2 class="home__name">박중원</h2>
-      <h3 class="home__job">Front-end web developer</h3>
-      <h3 class="home__description">무궁무진한 WEB 세계를 여행 중입니다! 🚀</h3>
-      <button class="home__contact" data-link="#contact">CONTACT ME</button>
-    </div>
-  </section>
-
-  <!-- About me -->
-  <section id="about" class="section section__container">
-    <div class="about__container">
-      <h1>About me</h1>
-      <p>어제보다 오늘, 오늘보다 내일 더 성장하는 개발자입니다!<br>개발자라는 새로운 길을 걸으며 실패를 두려워하지 않으려고 노력 중입니다.</p>
-    </div>
-    <div class="about__educations">
-      <div class="education">
-        <img id="education__img" src="imgs/education/education_icon_222.jpg" alt="yonsei" class="education__logo2">
-        <div class="education__description d1">
-          <p class="education__name">연세대학교 대기과학 전공</p>
-          <p class="education__period">2016.03 ~ 2022.08 </p>
-        </div>
-      </div>
-      <div class="education">
-        <img id="education__img" src="imgs/education/education_icon_114.png" alt="ssafy" class="education__logo1">
-        <div class="education__description d2">
-          <p class="education__name">삼성 청년 SW 아카데미</p>
-          <p class="education__period">2022.07 ~ </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills" class="section skill__section">
-    <h1>Skills</h1>
-    <div class="skills__container">
-      <div class="skill">
-        <h3 class="skillbox__name">Web Basic</h3>
-        <div class="skill__box">
-          <div class="box__component">
-            <img src="imgs/skill_imgs/html.png" alt="HTML" class="skill__img">
-            <div class="skill__name">HTML</div>
-          </div>
-          <div class="box__component">
-            <img src="imgs/skill_imgs/css.png" alt="CSS" class="skill__img">
-            <div class="skill__name">CSS</div>
-          </div>
-        </div>
-      </div>
-      <div class="skill">
-        <h3 class="skillbox__name">Language</h3>
-        <div class="skill__box">
-          <div class="box__component">
-            <img src="imgs/skill_imgs/python.png" alt="Python" class="skill__img">
-            <div class="skill__name">Python</div>
-          </div>
-          <div class="box__component">
-            <img src="imgs/skill_imgs/javascript.png" alt="JavaScript" class="skill__img border__control">
-            <div class="skill__name">JavaScript</div>
-          </div>
-          <div class="box__component">
-            <img src="imgs/skill_imgs/typescript.png" alt="TypeScript" class="skill__img">
-            <div class="skill__name">TypeScript</div>
-          </div>
-        </div>
-      </div>
-      <div class="skill">
-        <h3 class="skillbox__name">Framework</h3>
-        <div class="skill__box">
-          <div class="box__component">
-            <img src="imgs/skill_imgs/vue.png" alt="Vue" class="skill__img">
-            <div class="skill__name">Vue</div>
-          </div>
-          <div class="box__component">
-            <img src="imgs/skill_imgs/django.svg" alt="Django" class="skill__img">
-            <div class="skill__name">Django</div>
-          </div>
-        </div>
-      </div>
-      <div class="skill">
-        <h3 class="skillbox__name">Library</h3>
-        <div class="skill__box">
-          <div class="box__component">
-            <img src="imgs/skill_imgs/react.png" alt="React" class="skill__img">
-            <div class="skill__name">React</div>
-          </div>
-        </div>
-      </div>
-      <div class="skill">
-        <h3 class="skillbox__name">Version Control</h3>
-        <div class="skill__box">
-          <div class="skill__component">
-            <img src="imgs/skill_imgs/git.png" alt="Git" class="skill__img">
-            <div class="skill__name">Git</div>
-          </div>
-          <div class="skill__component">
-            <img src="imgs/skill_imgs/github.png" alt="Github" class="skill__img">
-            <div class="skill__name">Github</div>
-          </div>
-        </div>
-      </div>
-      <div class="skill unvisible">
-        <h3 class="skillbox__name"></h3>
-        <div class="skill__box">
-          <div class="box__component">
-            <div class="skill__name"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" class="section section__container">
-    <h1>Projects</h1>
-    <p class="projects_description">(프로젝트에 대한 상세 설명은 해당 프로젝트의 Github 페이지 README를 참고바랍니다.)</p>
-
-    <div class="project">
-      <h2 class="project__title">지브리의 숲</h2>
-      <div class="project__info">
-        <img src="imgs/인트로.gif" alt="프로젝트 이미지" class="project__img">
-        <div class="project__description">
-          <h3>기간</h3>
-          <p class="regular-margin-bottom">2022.11.08 ~ 2022.11.25 (2인 프로젝트)</p>
-          <h3>사용 기술스택</h3>
-          <p class="regular-margin-bottom">Django, HTML, CSS, JavaScript</p>
-          <h3>개요</h3>
-          <p class="small-margin-bottom">지브리 영화 커뮤니티 웹사이트</p>
-          <p class="regular-margin-bottom">* SSAFY 관통 프로젝트 우수상 수상</p>
-          <p class="small-margin-bottom">
-            <a class="project1__link" href="#"><b>Link</b></a> <b>/</b>
-            <a class="github__link" href="https://github.com/bohodays/forest-of-ghibli"><b>Github</b></a>
-          </p>
-          <p class="regular-margin-bottom">* 배포가 중단되어 Link 비활성화 되었습니다.</p>
-        </div>
-      </div>
-    </div>
-
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="section">
-    <h1 class="contact__title">Contact</h1>
-    <h2 class="contact__email">pjw2369@naver.com</h2>
-    <div class="contact__links">
-      <a href="https://github.com/bohodays" target="_blank">
-        <i class="fab fa-github links__img"></i>
-      </a>
-      <a href="https://pjw2369.tistory.com/" target="_blank">
-        <img src="imgs/tistory_logo.png" alt="티스토리 아이콘" class="links__img detail">
-      </a>
-    </div>
-  </section>
-
-  <!-- Arrow up -->
-  <button class="arrow-up">
-    <i class="fas fa-arrow-up"></i>
-  </button>
-</body>
-
+  </body>
 </html>
