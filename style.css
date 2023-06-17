@@ -227,6 +227,18 @@ p {
 }
 
 /* About */
+.title {
+  font-weight: var(--weight-bold);
+}
+.about__educations {
+  display: flex;
+  justify-content: space-around;
+}
+
+.education__container {
+  width: 570px;
+}
+
 .education {
   display: flex;
   align-items: center;
@@ -234,6 +246,11 @@ p {
 
 .about__container {
   margin-bottom: 40px;
+}
+
+.about__intro {
+  color: green;
+  font-weight: 600;
 }
 
 .education__description {
@@ -249,11 +266,31 @@ p {
 }
 
 .education__name {
-  font-weight: var(--weight-bold);
+  font-weight: var(--weight-semi-bold);
 }
 
 .education__period {
   font-weight: var(--weight-regular);
+}
+
+.award__container {
+  text-align: left;
+  padding-top: 32px;
+}
+
+.award {
+  margin-bottom: 30px;
+}
+
+.award__name {
+  font-weight: var(--weight-semi-bold);
+}
+
+.award__period {
+  font-weight: var(--weight-regular);
+  font-size: var(--font-micro);
+  color: #8f8f8f;
+  list-style: inside;
 }
 
 /* Skills */
@@ -372,6 +409,77 @@ p {
 
 .github__link:hover {
   color: #6495ed;
+}
+
+.my-works {
+  height: 50px;
+  cursor: pointer;
+  margin-top: 24px;
+  font-size: var(--font-regular);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all var(--animation-duration) linear;
+  /* border-radius: 8px; */
+}
+
+.my-works__description {
+  display: none;
+}
+
+.description__visible {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.description__container {
+  text-align: left;
+}
+
+.description__container > li {
+  list-style: inside;
+}
+
+.left-tap {
+  padding-left: 20px;
+}
+
+.my-works:hover {
+  background-color: var(--color-black);
+  color: var(--color-light-white);
+}
+
+.my-issue {
+  height: 50px;
+  cursor: pointer;
+  font-size: var(--font-regular);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all var(--animation-duration) linear;
+  /* border-radius: 8px; */
+}
+
+.my-issue:hover {
+  background-color: var(--color-black);
+  color: var(--color-light-white);
+}
+
+.my-retrospect {
+  height: 50px;
+  cursor: pointer;
+  font-size: var(--font-regular);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all var(--animation-duration) linear;
+  /* border-radius: 8px; */
+}
+
+.my-retrospect:hover {
+  background-color: var(--color-black);
+  color: var(--color-light-white);
 }
 
 /* Contact */

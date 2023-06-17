@@ -139,3 +139,12 @@ document.addEventListener("scroll", () => {
 arrowUp.addEventListener("click", () => {
   scrollIntoView("#home");
 });
+
+// 담당 기능 버튼을 누르면 설명 보이게 하기
+const project = document.querySelector("#projects");
+project.addEventListener("click", (e) => {
+  if (e.target.className === "my-works") {
+    const myWorksDescription = e.target.nextElementSibling;
+    myWorksDescription.classList.toggle("description__visible");
+  }
+});

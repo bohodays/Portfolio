@@ -51,9 +51,6 @@
         />
         <h2 class="home__name">박중원</h2>
         <h3 class="home__job">Front-end web developer</h3>
-        <h3 class="home__description">
-          무궁무진한 WEB 세계를 여행 중입니다! 🚀
-        </h3>
         <button class="home__contact" data-link="#contact">CONTACT ME</button>
       </div>
     </section>
@@ -62,34 +59,57 @@
     <section id="about" class="section section__container">
       <div class="about__container">
         <h1>About me</h1>
-        <p>
-          어제보다 오늘, 오늘보다 내일 더 성장하는 개발자입니다!<br />개발자라는
-          새로운 길을 걸으며 실패를 두려워하지 않으려고 노력 중입니다.
-        </p>
+        <p class="about__intro">토끼를 이기는 거북이 개발자 🐢</p>
+        <p class="about__intro">오늘보다 나은 내일을 위해 노력하고 있습니다.</p>
       </div>
       <div class="about__educations">
-        <div class="education">
-          <img
-            id="education__img"
-            src="imgs/education/education_icon_222.jpg"
-            alt="yonsei"
-            class="education__logo2"
-          />
-          <div class="education__description d1">
-            <p class="education__name">연세대학교 대기과학 전공</p>
-            <p class="education__period">2016.03 ~ 2022.08</p>
+        <div class="education__container">
+          <h3 class="title">🎓 학력 및 교육사항</h3>
+          <div class="education">
+            <img
+              id="education__img"
+              src="imgs/education/education_icon_222.jpg"
+              alt="yonsei"
+              class="education__logo2"
+            />
+            <div class="education__description d1">
+              <p class="education__name">연세대학교 대기과학 전공</p>
+              <p class="education__period">2016.03 ~ 2022.08</p>
+            </div>
+          </div>
+          <div class="education">
+            <img
+              id="education__img"
+              src="imgs/education/education_icon_114.png"
+              alt="ssafy"
+              class="education__logo1"
+            />
+            <div class="education__description d2">
+              <p class="education__name">삼성 청년 SW 아카데미</p>
+              <p class="education__period">2022.07 ~ 2023.06</p>
+            </div>
           </div>
         </div>
-        <div class="education">
-          <img
-            id="education__img"
-            src="imgs/education/education_icon_114.png"
-            alt="ssafy"
-            class="education__logo1"
-          />
-          <div class="education__description d2">
-            <p class="education__name">삼성 청년 SW 아카데미</p>
-            <p class="education__period">2022.07 ~</p>
+        <div class="about_award">
+          <h3 class="title">🏆 수상</h3>
+          <div class="award__container">
+            <div class="award">
+              <p class="award__name">
+                삼성 청년 SW 아카데미 특화 프로젝트 우수상 - 2023. 04
+              </p>
+              <li class="award__period">
+                4차 산업 혁명 기술을 활용한 프로젝트 경진대회
+              </li>
+            </div>
+            <div class="award">
+              <p class="award__name">
+                삼성 청년 SW 아카데미 관통 프로젝트 우수상 - 2022. 11
+              </p>
+              <li class="award__period">
+                'Open API와 외부 데이터를 활용한 영화 추천 서비스' 프로젝트
+                경진대회
+              </li>
+            </div>
           </div>
         </div>
       </div>
@@ -285,6 +305,26 @@
             </p>
           </div>
         </div>
+        <div class="my-works">💡 담당 기능</div>
+        <div class="my-works__description">
+          <div class="description__container">
+            <p>▪️ 소셜 로그인 구현 (GitHub)</p>
+            <p>▪️ 습관 기록 자동화를 위한 Chrome Extension 개발</p>
+            <p>▪️ WebSocket을 이용하여 유저간 실시간 CS퀴즈 배틀 구현</p>
+            <p>▪️ Feed 페이지 무한 스크롤 구현</p>
+            <p>▪️ Blender를 활용한 3D 모델링</p>
+            <p class="left-tap">- 캐릭터 6개</p>
+            <p class="left-tap">- 메인 맵</p>
+            <p class="left-tap">- 방 꾸미기용 아이템 62개</p>
+            <p>▪️ three.js를 활용한 3D 모델 렌더링</p>
+            <p class="left-tap">- 3D 물체 생성, 이동, 회전, 삭제 구현</p>
+            <p>▪️ React lazy, Suspense fallback 등을 통한 사용자 경험 향상</p>
+            <p>▪️ Recoil을 통한 전역 상태 관리</p>
+            <p>▪️ 공통 UI 컴포넌트 개발 및 관리 (Button, Nav 등)</p>
+          </div>
+        </div>
+        <div class="my-issue">🚨 이슈 사항</div>
+        <div class="my-retrospect">📚 회고</div>
       </div>
 
       <div class="project">
@@ -324,6 +364,40 @@
             </p>
           </div>
         </div>
+        <div class="my-works">💡 담당 기능</div>
+        <div class="my-works__description">
+          <div class="description__container">
+            <p>▪️ JWT를 활용한 유저 CRUD 구현</p>
+            <p>▪️ 소셜 로그인 구현 (구글, 카카오)</p>
+            <p>▪️ 일기 작성 기능 구현</p>
+            <p class="left-tap">
+              - 일기 작성 페이지 (텍스트 입력, 공개 범위 설정, 이미지 첨부, 기록
+              위치 설정)
+            </p>
+            <p class="left-tap">
+              - 감정 분석 결과 및 꽃 선택 페이지 (텍스트를 기반으로 분석된 감정
+              결과 표시, 가장 상위 감정과 매칭되는 꽃말을 가진 꽃들 표시)
+            </p>
+            <p class="left-tap">
+              - 일기의 배경음악 선택 페이지 (음악 추천 알고리즘을 통해 5개의
+              배경음악 추천)
+            </p>
+            <p class="left-tap">
+              - 정원 편집 페이지 (선택한 꽃을 정원의 원하는 위치에 배치)
+            </p>
+            <p>▪️ 방명록 기능 구현</p>
+            <p>▪️ Blender를 활용한 3D 모델링</p>
+            <p class="left-tap">- 3종류의 정원 테마(공원, 캠프, 해변)</p>
+            <p class="left-tap">- 25종류의 꽃</p>
+            <p>▪️ three.js를 활용한 3D 모델 렌더링</p>
+            <p>▪️ 반응형 웹 구현</p>
+            <p>▪️ React lazy, Suspense fallback 등을 통한 사용자 경험 향상</p>
+            <p>▪️ Redux를 통한 전역 상태 관리</p>
+            <p>▪️ 공통 UI 컴포넌트 개발 및 관리 (Button, Nav 등)</p>
+          </div>
+        </div>
+        <div class="my-issue">🚨 이슈 사항</div>
+        <div class="my-retrospect">📚 회고</div>
       </div>
 
       <div class="project">
@@ -362,6 +436,29 @@
             </p>
           </div>
         </div>
+        <div class="my-works">💡 담당 기능</div>
+        <div class="my-works__description">
+          <div class="description__container">
+            <p>▪️ JWT를 활용한 유저 CRUD 구현</p>
+            <p>▪️ 소셜 로그인 구현 (구글, 카카오)</p>
+            <p>▪️ 수강생이 원하는 강의 요청 게시물 CRUD 구현</p>
+            <p>▪️ 실시간 화상채팅 강의 기능 구현</p>
+            <p class="left-tap">
+              - webRTC를 활용하여 화면 공유, 도움 요청, 마이크 온오프, 카메라
+              온오프 기능 구현
+            </p>
+            <p class="left-tap">- WebSocket을 이용한 실시간 채팅 기능 구현</p>
+            <p class="left-tap">
+              - 강의 시작 시간에 맞춰 실시간 화상채팅 강의실 활성화
+            </p>
+            <p class="left-tap">- 강사 평가 기능 구현</p>
+            <p>▪️ 마일리지 점수제 시스템 구현</p>
+            <p>▪️ React lazy, Suspense fallback 등을 통한 사용자 경험 향상</p>
+            <p>▪️ 공통 UI 컴포넌트 개발 및 관리 (Button, Nav 등)</p>
+          </div>
+        </div>
+        <div class="my-issue">🚨 이슈 사항</div>
+        <div class="my-retrospect">📚 회고</div>
       </div>
 
       <div class="project">
@@ -398,6 +495,22 @@
             </p>
           </div>
         </div>
+        <div class="my-works">💡 담당 기능</div>
+        <div class="my-works__description">
+          <div class="description__container">
+            <p>▪️ Django를 이용한 DB 구축 및 설계</p>
+            <p>▪️ 지브리 영화 검색 기능 구현</p>
+            <p>▪️ 지브리 영화 목록 및 상세 영화 정보 기능 구현</p>
+            <p>▪️ JavaScript를 이용한 비동기 방식의 댓글 CRUD 구현</p>
+            <p>▪️ 유저 CRUD 구현</p>
+            <p>▪️ 유저 MBTI 검사 및 관련 지브리 캐릭터 매칭 기능 구현</p>
+            <p>▪️ 지브리 관련 퀴즈 기능 구현</p>
+            <p>▪️ 부분적 반응형 웹사이트 구현</p>
+            <p>▪️ AWS를 이용하여 프로젝트 배포</p>
+          </div>
+        </div>
+        <div class="my-issue">🚨 이슈 사항</div>
+        <div class="my-retrospect">📚 회고</div>
       </div>
     </section>
 
