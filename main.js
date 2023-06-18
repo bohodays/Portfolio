@@ -140,11 +140,28 @@ arrowUp.addEventListener("click", () => {
   scrollIntoView("#home");
 });
 
-// 담당 기능 버튼을 누르면 설명 보이게 하기
 const project = document.querySelector("#projects");
+
+// 담당 기능 버튼을 누르면 설명 보이게 하기
 project.addEventListener("click", (e) => {
   if (e.target.className === "my-works") {
     const myWorksDescription = e.target.nextElementSibling;
     myWorksDescription.classList.toggle("description__visible");
+  }
+});
+
+// 이슈 사항 버튼을 누르면 설명 보이게 하기
+project.addEventListener("click", (e) => {
+  if (e.target.className === "my-issue") {
+    const myIssueDescription = e.target.nextElementSibling;
+    myIssueDescription.classList.toggle("description__visible-highlight");
+  }
+});
+
+// 회고 버튼을 누르면 설명 보이게 하기
+project.addEventListener("click", (e) => {
+  if (e.target.className === "my-retrospect") {
+    const myRetrospectDescription = e.target.nextElementSibling;
+    myRetrospectDescription.classList.toggle("description__visible-highlight");
   }
 });

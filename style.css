@@ -429,7 +429,7 @@ p {
 
 .description__visible {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   padding: 10px 0;
 }
 
@@ -466,6 +466,16 @@ p {
   color: var(--color-light-white);
 }
 
+.my-issue__description {
+  display: none;
+}
+
+.highlight {
+  background-color: #f1f1ef;
+  padding: 10px;
+  margin: 12px 0;
+}
+
 .my-retrospect {
   height: 50px;
   cursor: pointer;
@@ -480,6 +490,18 @@ p {
 .my-retrospect:hover {
   background-color: var(--color-black);
   color: var(--color-light-white);
+}
+
+.my-retrospect__description {
+  display: none;
+}
+
+.my-retrospect__p {
+  margin: 12px 0px;
+}
+
+.description__visible-highlight {
+  display: block;
 }
 
 /* Contact */
