@@ -617,6 +617,19 @@ p {
     align-items: center;
   }
 
+  .about__educations {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .education {
+    justify-content: center;
+  }
+
+  .about_award {
+    margin-top: 32px;
+  }
+
   .skill {
     width: 80%;
   }
