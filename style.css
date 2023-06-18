@@ -484,7 +484,6 @@ p {
   justify-content: center;
   align-items: center;
   transition: all var(--animation-duration) linear;
-  /* border-radius: 8px; */
 }
 
 .my-retrospect:hover {
