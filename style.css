@@ -1,5 +1,12 @@
 /* Global setup */
 :root {
+  /* App Colors */
+  --color-primary: var(--color-black);
+  --color-primary-variant: var(--color-grey);
+  --color-accent: var(--color-blue);
+  --color-accent-variant: var(--color-light-grey);
+  --color-text: var(--color-white);
+
   /* Color */
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
