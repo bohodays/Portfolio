@@ -185,13 +185,31 @@ p {
 
 /* Home */
 #home {
+  position: relative;
   background: url("imgs/background_img.jpg") center/cover no-repeat;
   padding: 100px;
   padding-bottom: 70px;
 }
 
-.home__container {
-  margin-top: 30px;
+.home__divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.home__divider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 36px;
+}
+
+.home__divider .shape-fill {
+  fill: #ffffff;
 }
 
 .home__name {

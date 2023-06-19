@@ -165,3 +165,6 @@ project.addEventListener("click", (e) => {
     myRetrospectDescription.classList.toggle("description__visible-highlight");
   }
 });
+
+// 타이핑 효과
+new TypeIt(".home__job", { loop: true, loopDelay: [750, 3000] }).go();
